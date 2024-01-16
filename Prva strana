@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Naslovna</title>
+    <!-- Teodora Ristić AI 7/2021-->
+    <!-- Matija Vucinic AI 16/2021-->
+    <!-- Veljko Pavlovic  AI 23/2021-->
+
+    <!-- ove 4 linije koda moramo kopirati sa w3schools (B4 ili B5) kako bi uopste funkcionisao Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- ovaj smo dodali da bi radio dropdown menu -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar  navbar-dark navbar-expand-sm fixed-top" style="background-color: rgba(0, 0, 0, 0.85);">
+        <!-- navbar-brand - stilizacija linka unutar Bootstrapa -->
+        <a class="navbar-brand" href="./Naslovna.html"><img src="slike/logologo.png" alt="Avatar Logo"
+                style="width:40px;" ></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Test">
+            <!-- navbar-toggler-icon - za ikonicu dugmeta -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="Test">
+            <!-- neuredjena lista koja predstavlja kontejner za niz navigacionih linkova - ul -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Naslovna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./O Nama.html">O nama</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ko smo mi</a>
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="./Matija Vucinic.html">Matija Vučinić</a></li>
+                        <li><a class="dropdown-item" href="./Teodora Ristic.html">Teodora Ristić</a></li>
+                        <li><a class="dropdown-item" href="./Veljko Pavlovic.html">Veljko Pavlović</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Oblasti.html">Oblasti</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Radovi</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Muzika.html">Muzika</a></li>
+                        <li><a class="dropdown-item" href="./Foto-video.html">Foto-video</a></li>
+                        <li><a class="dropdown-item" href="./Didital art.html">Digital art</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        <b style="padding-right: 30px; color: rgb(255, 255, 255);" id="clock"></b>
+    </nav>
+
+    <!-- ovaj div povezujemo preko id=Test sa gornjim dugmetom -->
+    <!-- navbar-collapse - sadrzaj za navigacione trake -->
+
+
+    <div class="progress-container"
+        style="padding-top: 65px;width: 100%;height: 8px;background: #ccc; position: fixed;">
+        <div class="progress-bar" style=" position: fixed;height: 8px;background: #04AA6D; width: 0%;" id="myBar"></div>
+    </div>
+
+
+
+    <!-- jumbotron - Bootstrapova klasa za stilizovan blok -->
+    <!-- margin-bottom: 0 - znaci nemamo nista ispod ovog elementa -->
+    <div class="jumbotron text-center"
+        style="background-image: url(./slike/1.jpg); margin-bottom: 0;padding-top: 100px;width: 100%;">
+        <h1>0021</h1>
+    </div>
+
+    <div class="container-fluid" style="background-image: url(./slike/22.png);">
+        <!-- row - red koji ce kontrolisati kolone (col) -->
+        <div class="row" style="background-color: rgba(255, 255, 255, 0.721);padding-bottom: 50px;">
+            <!-- col-md-4 - col se odnosi na kolonu, md-medium, 4 na sirinu 4 -->
+            <div class="col-md-1 text-center"></div>
+            <div class="col-md-4 text-center" style=" padding-top: 7%;">
+                <img class="card-img-top rounded" style="height: 100%;width: 100%;" src="./slike/img_avatar1.png"
+                    alt="Card image">
+            </div>
+            <div class="col-md-6 text-center" style="text-align: center;padding-top: 12%; padding-left: 15%; ">
+                <h3 >Zaviri u našu audio-vizuelnu produkciju koja objedinjuje nekoliko formi umetnosti
+                    kreirajući jedinstven sadržaj i doživljaj! </h3><br>
+                <h4>Zanima te šta radimo? <br>Pogledaj naše dosadašnje
+                    projekte i oblasti kojima se bavimo!</h4><br>
+                <a href="./Oblasti.html" button type="button" class="btn btn-outline-dark btn-lg">Oblasti</button></a>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <!-- col-md-4 - col se odnosi na kolonu, md-medium, 4 na sirinu 4 -->
+            <div class="col-md-12 text-center"
+                style="background-color: rgb(0, 0, 0); padding-top: 3%; padding-bottom: 3%;">
+                <div class="tekst">Ako želiš da upoznaš članove našeg tima i saznaš nešto više o nama samima ali i idejama koje gajimo,
+                    pročitaj opširnije o nama!</div>
+
+            </div>
+        </div>
+        <div class="row">
+            <!-- col-md-4 - col se odnosi na kolonu, md-medium, 4 na sirinu 4 -->
+            <div class="col-md-1 text-center"></div>
+            <div class="col-md-10 text-center" style=" padding-top: 3%;">
+                <div class="card">
+                    <a href="./O Nama.html"><img class="card-img-top rounded" style="height: 600px;" src="./slike/8.png"
+                            alt="Card image">
+                        <div class="card-img-overlay">
+                            <h1 class="card-title" style="padding-top: 230px;">O NAMA</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <!-- col-md-4 - col se odnosi na kolonu, md-medium, 4 na sirinu 4 -->
+            <div class="col-md-12 text-center"
+                style="background-color: rgb(0, 0, 0); padding-top: 3%; padding-bottom: 3%;">
+                <div class="tekst">Ako si već sada siguran/na da želiš da tvoj prvi projekat bude saradnja sa nama, ne
+                    gubi
+                    vreme i kontaktiraj nas!</div>
+
+            </div>
+            <div class="container-fluid" style="height: 165px;text-align: center;padding-top: 1.5%;">
+                <a href="./Kontakt.html" button type="button" class="btn btn-light btn-lg">Kontakt</button></a>
+            </div>
+        </div>
+    </div>
+
+        <div class="jumbotron text-center p-3"
+            style="background-color: rgb(23, 23, 23); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px; text-align: center;">
+            <div class="row">
+                <div class="col-sm-4"><b style="color: white; ">Teodora: <a
+                            href="mailto:risticteodora688@gmail.com">risticteodora688@gmail.com </a></b></div>
+                <div class="col-sm-4"> <b style="color: white;">Matija: <a
+                            href="mailto:vucinicmatija.novisad@gmail.com">vucinicmatija.novisad@gmail.com </a></b></div>
+                <div class="col-sm-4"><b style="color: white;">Veljko: <a
+                            href="mailto:vpavlovic2215@gmail.com">vpavlovic2215@gmail.com</a></b></div>
+            </div>
+        </div>
+
+        <script>
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function () { myFunction() };
+
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+        <script>
+            var myVar = setInterval(function () {
+                myTimer();
+            }, 1000);
+
+            function myTimer() {
+                var d = new Date();
+                document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+            }
+        </script>
+
+</body>
+
+</html>
