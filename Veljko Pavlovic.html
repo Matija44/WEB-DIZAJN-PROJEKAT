@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Veljko Pavlovic</title>
+    <!-- Teodora Ristić AI 7/2021-->
+    <!-- Matija Vucinic AI 16/2021-->
+    <!-- Veljko Pavlovic  AI 23/2021-->
+
+    <!-- ove 4 linije koda moramo kopirati sa w3schools (B4 ili B5) kako bi uopste funkcionisao Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- ovaj smo dodali da bi radio dropdown menu -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body style="background-repeat: no-repeat; background-attachment:fixed; background-image:url(./slike/22.png);">
+
+    <nav class="navbar  navbar-dark navbar-expand-sm fixed-top" style="background-color: rgba(0, 0, 0, 0.85);">
+        <!-- navbar-brand - stilizacija linka unutar Bootstrapa -->
+        <a class="navbar-brand" href="./Naslovna.html"><img src="slike/logologo.png" alt="Avatar Logo"
+                style="width:40px;"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Test">
+            <!-- navbar-toggler-icon - za ikonicu dugmeta -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="Test">
+            <!-- neuredjena lista koja predstavlja kontejner za niz navigacionih linkova - ul -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Naslovna.html">Naslovna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./O Nama.html">O nama</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ko smo mi</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Matija Vucinic.html">Matija Vučinić</a></li>
+                        <li><a class="dropdown-item" href="./Teodora Ristic.html">Teodora Ristić</a></li>
+                        <li><a class="dropdown-item" href="./Veljko Pavlovic.html">Veljko Pavlović</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Oblasti.html">Oblasti</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Radovi</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Muzika.html">Muzika</a></li>
+                        <li><a class="dropdown-item" href="./Foto-video.html">Foto-video</a></li>
+                        <li><a class="dropdown-item" href="./Didital art.html">Digital art</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        <b style="padding-right: 30px; color: rgb(255, 255, 255);" id="clock"></b>
+    </nav>
+
+    <!-- ovaj div povezujemo preko id=Test sa gornjim dugmetom -->
+    <!-- navbar-collapse - sadrzaj za navigacione trake -->
+
+
+    <div class="progress-container"
+        style="padding-top: 65px;width: 100%;height: 8px;background: #ccc; position: fixed;">
+        <div class="progress-bar" style=" position: fixed;height: 8px;background: #04AA6D; width: 0%;" id="myBar"></div>
+    </div>
+
+
+
+    <!-- jumbotron - Bootstrapova klasa za stilizovan blok -->
+    <!-- margin-bottom: 0 - znaci nemamo nista ispod ovog elementa -->
+    <div class="jumbotron text-center"
+        style="background-image: url(./slike/1.jpg); margin-bottom: 0;padding-top: 100px;width: 100%;">
+        <h1>KO SMO MI</h1>
+    </div>
+
+    <div class="container-fluid" style="background-image: url(./slike/22.png);">
+        <!-- row - red koji ce kontrolisati kolone (col) -->
+        <div class="row" style="background-color: rgba(255, 255, 255, 0.721);padding-bottom: 50px;">
+            <!-- col-md-4 - col se odnosi na kolonu, md-medium, 4 na sirinu 4 -->
+            <div class="col-md-1 text-center"></div>
+            <div class="col-md-4 text-center" style=" padding-top: 7%;">
+                <img class="card-img-top rounded" style="height: 100%;width: 100%;" src="./slike/img_avatar1.png"
+                    alt="Card image">
+            </div>
+            <div class="col-md-6 text-align" style="text-align: left;padding-top: 12%; padding-left: 15%;">
+                <h3> Ime i prezime: <u>Veljko Pavlović </u><br> <br>Datum rođenja: <u>22.10.2002.</u>
+                    <br><br>Obrazovanje: <u>FTN,
+                        Animacij u inženjerstvu</u><br> <br>Oblasti rada: <u> Digital Art i 3D</u> <br> <br>
+                </h3><br>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <!-- col-md-4 - col se odnosi na kolonu, md-medium, 4 na sirinu 4 -->
+            <div class="col-md-12 text-center"
+                style="background-color: #0b0b0be9; padding-top: 3%; padding-bottom: 3%;">
+                <div class="tekst " style="font-size: 70px;">BIOGRAFIJA</div>
+            </div>
+            <div class="col-md-12 text-align"
+                style="background-color: rgba(28, 28, 28, 0.9); padding-top: 1%; padding-bottom: 3%;">
+
+                <div class="biografija">
+                    Oduvek sam voleo sve što je imalo veze sa računarima i svetom kojem pripadaju razni uređaji. Ako
+                    tome dodamo i igrice, dobijamo osnovnu ideju smera koji sam upisao. Tu sam uspeo da se, kroz
+                    elemente koji su mi poznati od detinjstva, izrazim i upoznam sa različitim oblicima digitalne
+                    umetnosti koja je sve više zastupljena. Upravo ta digitalna umetnost, svet 3D modelovanja i
+                    animacije mi je dozvolila da tehničko poznavanje opreme i sredstava izražavanja iskoristim na
+                    najbolji mogući način koji rezultuje kreiranjem umetničkih ili inženjerskih koncepata i ideja. <br>
+                    Ljubav prema naučnoj fantastici i drugim žanrovima koji u središtu imaju svetove van granica
+                    poznatog su mi u ovom periodu kada slobodno stvaram i kreiram poslužili kao podloga i inspiracija za
+                    kreiranje mojih sopstvenih. Modelovanje bića poznatih samo fantaziji i mašti, ali i modelovanje
+                    jednostavnih modela predstavljaju izazove koji se prevazilaze učenjem novih alata. Prvenstveni cilj
+                    svkog novog projekta je prevazilaženje problema koji se nađu na putu ka realizaciji, uključivanje
+                    kritičkog razmišljanja u proces izrade ali i na samom kraju, kreativno izražavanje kroz sve
+                    umetničke i inženjerske aspekte digitalnog kreiranja sadržaja i umetnosti.
+                </div>
+            </div>
+            <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.394);padding-bottom: 70px;">
+                <h4 style="padding-top: 20px; font-size: 55px;"> ISTAKNUTI RADOVI</h4>
+                <div class="card-deck" style="padding-top: 30px;">
+                    <div class="card bg-info">
+                        <a target="_blank" href="./slike/zmaj.jpg"><img class="card-img-top rounded"
+                                src="./slike/zmaj.jpg" alt="Zmaj "></a>
+                        <div class="card-body text-center" style="background-color: rgb(74, 74, 74);">
+                            <h4 class="card-title">Prvi Z-Brush projekat</h4>
+                        </div>
+                    </div>
+                    <div class="card bg-info">
+                        <a target="_blank" href="./slike/1.png"><img class="card-img-top rounded" src="./slike/1.png"
+                                alt="Mač "></a>
+                        <div class="card-body text-center" style="background-color: rgb(74, 74, 74);">
+                            <h4 class="card-title">Prvi lični projekat</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="jumbotron text-center p-3"
+            style="background-color: rgb(23, 23, 23); bottom: 0; position: fixed; width: 100%; margin-bottom: 0px; text-align: center;">
+            <div class="row">
+                <div class="col-sm-4"><b style="color: white; ">Teodora: <a
+                            href="mailto:risticteodora688@gmail.com">risticteodora688@gmail.com </a></b></div>
+                <div class="col-sm-4"> <b style="color: white;">Matija: <a
+                            href="mailto:vucinicmatija.novisad@gmail.com">vucinicmatija.novisad@gmail.com </a></b>
+                </div>
+                <div class="col-sm-4"><b style="color: white;">Veljko: <a
+                            href="mailto:vpavlovic2215@gmail.com">vpavlovic2215@gmail.com</a></b></div>
+            </div>
+        </div>
+
+        <script>
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function () { myFunction() };
+
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+        <script>
+            var myVar = setInterval(function () {
+                myTimer();
+            }, 1000);
+
+            function myTimer() {
+                var d = new Date();
+                document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+            }
+        </script>
+
+</body>
+
+</html>
